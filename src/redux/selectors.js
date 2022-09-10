@@ -16,7 +16,7 @@ export const getFilteredBooks = ({books, filter}) => {
 }
 
 export const getfavoriteBooks = store => {
-    const favoriteBooks = store.books.filter(({favorite}) => favorite);
+    const favoriteBooks = store.books.filter(({favourite}) => favourite);
     return favoriteBooks;
 };
 

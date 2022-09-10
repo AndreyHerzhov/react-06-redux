@@ -3,7 +3,8 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 const HomePage = lazy(() => import("pages/HomePage/HomePage")) 
 const MyBooksPage = lazy(() => import("pages/MyBooksPage/MyBooksPage"))
-// const MyFavoriteBooksPage = lazy(()=> import('./pages/MyFavoriteBooksPage/MyFavoriteBooksPage'));
+ 
+const MyFavoriteBooksPage = lazy(()=> import('./pages/MyFavoriteBooksPage/MyFavoriteBooksPage'));
 // const PostsSearchPage = lazy(() => import("pages/PostsSearchPage/PostsSearchPage")) ;
 // const ContactsPage = lazy(() => import("pages/ContactsPage/ContactsPage")) ;
 // const NotFoundPage = lazy(() => import("pages/NotFoundPage/NotFoundPage")) ;
@@ -16,7 +17,7 @@ const UserRoutes = () => {
             <Routes>
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/my-books" element={<MyBooksPage />} />
-                {/* <Route path="/my-favorite-books" element={<MyFavoriteBooksPage />} /> */}
+                <Route path="/my-favourite-books" element={<MyFavoriteBooksPage />} />
                 {/* <Route path="/posts" element={<PostsSearchPage/>} />
                 <Route path="/posts/:id" element={<SinglePostPage/>}>
                     <Route path="comments" element={<SinglePostCommentsPage/>} />
