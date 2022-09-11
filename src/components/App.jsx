@@ -1,13 +1,11 @@
-import Menu from "modules/Menu/Menu";
 import "../shared/styles/style.css"
-import UserRoutes from "UserRoutes";
+import MyBooksPage from "pages/MyBooksPage/MyBooksPage";
 
 
 function App(){
   return (
     <div>
-      <Menu />
-        <UserRoutes/>
+        <MyBooksPage/>
     </div>
   );
 };

@@ -1,5 +1,3 @@
-// export const ADD_BOOK = "ADD_BOOK"
-export const ADD_BOOK = "books/add";
-export const REMOVE_BOOK = "books/remove";
-
+export const ADD_CONTACT = "contact/add";
+export const REMOVE_CONTACT = "contact/remove";
 export const SET_FILTER = "filter/set";

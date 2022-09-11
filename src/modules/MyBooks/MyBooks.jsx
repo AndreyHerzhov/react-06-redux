@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import Container from "./Container";
 import FormAddBook from "./FormAddBook";
-import BookList from "./BookList";
+import BookList from "./ContactList";
 import { addBook, removeBook, setFilter } from "redux/actions";
 
  
@@ -12,6 +12,7 @@ import styles from "./my-books.module.css";
 
 const MyBooks = () => {
     const books = useSelector(store => store.books)
+    console.log(books)
     const filter = useSelector(getFilter);
     const dispatch = useDispatch()
     const onAddBook = (payload) => {
